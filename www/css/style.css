@@ -1,0 +1,304 @@
+/* set padding for iOS7 status bar */
+.ua-ios-7 .ui-page, .ua-ios-8 .ui-page
+{
+    padding-top: 63px !important;
+}
+.ua-ios-7 .ui-header, .ua-ios-8 .ui-header
+{
+    top: 20px;
+}
+
+
+
+
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+*:not(input):not(textarea) {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+
+.red-font {
+	color: #FF3B30;
+}
+
+body {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	width: 100%;
+	height: 100%;
+	line-height: 1.3rem;
+	/*background: tomato;*/
+	background: #F7F7F7;/*background: rgb(252,248,239);*/
+	overflow: hidden;
+}
+
+a { text-decoration: none; }
+
+.main-content {
+  /*position: absolute;
+  top: 0; bottom: 0;*/
+  position: relative;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.main-content ul {
+	margin-top: 4rem;
+	width: 100%;
+	overflow-x: hidden;
+}
+.main-content li {
+	width: 100%;
+	border-top: 1px solid rgba(255,255,255,0.8);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.swiper {
+	position: relative;
+	display: inline-block;
+	background: #F7F7F7;/*background: rgb(252,248,239);*/
+	padding: .3rem .775em;
+	left: 0;
+	height: auto;
+	overflow: hidden;
+	width: 100%;
+	max-height: 800px;
+	transition: max-height 500ms ease, padding 500ms ease;
+	-webkit-transition: max-height 500ms ease, padding 500ms ease;
+}
+
+.swiper p {
+	margin-top: 2rem;
+}
+
+.datetime {
+	line-height: 1.375rem;
+	display: block;
+	position: absolute;
+	top: .3rem;
+	right: .3rem;
+	width: 9.5rem;
+	text-align: right;
+	font-size: .85rem;
+	color: #4c4c4c;
+	white-space: nowrap;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  height: 1.6rem;
+  position: absolute;
+  left: .5rem;
+  right: 10.3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+.delete-div {
+	display: block;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	width: 100px;
+	background: #FF3B30;
+	color: white;
+	text-align: center;
+}
+
+.main-content li.new {
+  max-height: 25rem;
+  transition: max-height 1s ease,
+  				border-color 1s ease;
+  -webkit-transition: max-height 1s ease,
+  				border-color 1s ease;
+  text-align: center;
+  border-top: none;
+  border-left: 5px solid #FF3B30;
+  border-bottom: 5px solid #FF3B30;
+  border-right: 5px solid #FF3B30;
+  border-color: #FF3B30;
+}
+.main-content li.new input,
+.main-content li.new textarea {
+	display: inline-block;
+	-webkit-appearance: normal;
+	position: relative;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 88%;
+	margin-top: 1rem;
+}
+.main-content li.new textarea {
+	min-height: 6rem;
+}
+.main-content li.new p {
+	display: inline-block;
+	line-height: 1.6rem;
+	width: 90%
+	margin-left: 5%;
+	height: 1.6rem;
+}
+
+.main-content li.new.closed {
+  max-height: 0;
+  overflow: hidden;
+  border-color: transparent;
+}
+
+.main-content .addButton {
+	width: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	line-height: 4rem;
+	text-align: center;
+	font-size: 3rem;
+	background: #FF3B30;
+	color: white;
+	overflow: hidden;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+}
+.main-content .addButton.half {
+	width: 50%;
+	float: left;
+}
+
+.main-content .addButton.closed {
+	line-height: 0;
+	color: #FF3B30;
+}
+
+.main-content input,
+.main-content textarea {
+	width: 100%;
+}
+
+
+.icon-heart, .icon-baby {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 60%;
+}
+
+.icon-heart {
+	background-image: url(../images/heart.svg);
+}
+.icon-baby {
+	background-image: url(../images/baby.svg);
+}
+
+
+.table {
+	width: 100%;
+	font-weight: 100;
+}
+.table > div {
+	width: 100%;
+	display: table;
+	table-layout:fixed;
+}
+.table > div > div {
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+.square-box{
+    position: relative;
+    overflow: hidden;
+    background: #0663b2;
+}
+.square-box:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.square-content{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+.square-content div {
+   display: table;
+   width: 100%;
+   height: 100%;
+}
+.square-content span {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white
+}
+
+
+.fa.fa-heart {
+	margin-left: 1rem;
+	animation: beat 500ms alternate infinite;
+}
+
+@keyframes beat {
+  to {
+    transform: scale(.95);
+  }
+}
+
+
+
+
+
+
+
+
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter,
+.animate-repeat.ng-leave {
+  -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space:nowrap;
+}
+
+.animate-repeat.ng-leave.ng-leave-active,
+.animate-repeat.ng-move,
+.animate-repeat.ng-enter {
+  opacity:0;
+  max-height:0;
+}
+
+.animate-repeat.ng-leave,
+.animate-repeat.ng-move.ng-move-active,
+.animate-repeat.ng-enter.ng-enter-active {
+  opacity:1;
+  max-height:40px;
+}
