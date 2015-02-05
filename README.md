@@ -6,6 +6,11 @@ This application counts the days and weeks after the day of our wedding and the 
 
 Made with technologies such [AngularJS](https://angularjs.org) and [Phonegap](http://phonegap.com).
 
+<br/>
+<br/>
+<br/>
+<br/>
+
 ![Home](/screenshots/home1.png?raw=true)
 
 ![Home](/screenshots/home2.png?raw=true)
